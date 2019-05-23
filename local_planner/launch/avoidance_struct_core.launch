@@ -27,6 +27,7 @@
 
 
     <!-- Launch avoidance -->
+    <node name="dynparam" pkg="dynamic_reconfigure" type="dynparam" args="load local_planner_node /usr/auterion_ws/config/local_planner_d435.yaml" />
     <env name="ROSCONSOLE_CONFIG_FILE" value="$(find local_planner)/resource/custom_rosconsole.conf"/>
     <arg name="pointcloud_topics" default="[/sc/depth/points]"/>
 
